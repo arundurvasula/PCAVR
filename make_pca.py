@@ -6,7 +6,9 @@ out.write("<!DOCTYPE html>\n")
 out.write("<html>\n<head>\n<meta charset='utf-8'>\n<title>PCA</title>\n<script src='https://aframe.io/releases/0.5.0/aframe.min.js'></script>\n</head>\n")
 out.write("<body>\n<a-scene>\n")
 out.write("""
-<a-camera look-controls wasd-controls fly='true'></a-camera>
+<a-entity camera look-controls wasd-controls='fly: true'>
+<a-entity cursor='fuse: true; fuseTimeout: 500' position='0 0 -1' geometry='primitive: ring; radiusInner: 0.02; radiusOuter: 0.03' material='color: black; shader: flat'></a-entity>
+</a-entity camera>
 """)
 #out.write("""
 #<a-entity camera><a-entity cursor='fuse: true; fuseTimeout: 500' #position='0 0 -1' geometry='primitive: ring; radiusInner: 0.02; #radiusOuter: 0.03' material='color: black; shader: flat'></a-entity></#a-entity>""")

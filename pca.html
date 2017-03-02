@@ -8,7 +8,9 @@
 <body>
 <a-scene>
 
-<a-camera look-controls wasd-controls fly='true'></a-camera>
+<a-entity camera look-controls wasd-controls='fly: true'>
+<a-entity cursor='fuse: true; fuseTimeout: 500' position='0 0 -1' geometry='primitive: ring; radiusInner: 0.02; radiusOuter: 0.03' material='color: black; shader: flat'></a-entity>
+</a-entity camera>
 <a-sphere position='-0.675402 -0.8152125 -0.23775 ' radius='0.15' color='#2E9CFD' text='value: 4779; color: white'></a-sphere>
 <a-sphere position='-0.67947 -0.8214135 -0.25491749999999996 ' radius='0.15' color='#2E9CFD' text='value: 5023; color: white'></a-sphere>
 <a-sphere position='-0.6717599999999999 -0.810609 -0.2416665 ' radius='0.15' color='#2E9CFD' text='value: 5279; color: white'></a-sphere>
