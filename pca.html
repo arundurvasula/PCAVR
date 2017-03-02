@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>PCA</title>
+<script src='https://aframe.io/releases/0.5.0/aframe.min.js'></script>
+</head>
+<body>
+<a-scene>
+<a-sphere position='-0.675402 -0.8152125 -0.23775 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.67947 -0.8214135 -0.25491749999999996 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6717599999999999 -0.810609 -0.2416665 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6684945 -0.8127615 -0.226086 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6620745 -0.817032 -0.232146 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.67635 -0.8165144999999999 -0.240549 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.653604 -0.707916 -0.06181485 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.698865 -0.8475524999999999 -0.3040335 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.7154145000000001 -0.852429 -0.307092 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6962625 -0.835323 -0.2782245 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.8374635 -1.017549 -0.383379 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6804675 -0.7745145 -0.29886 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6731130000000001 -0.7842765 -0.3064485 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6915945 -0.7904384999999999 -0.30399149999999997 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6934605 -0.8235405 -0.264477 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6874140000000001 -0.8234655 -0.25080749999999996 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.690777 -0.8251095 -0.241614 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.83988 -1.033023 -0.3725385 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6841365 -0.818292 -0.257859 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.685713 -0.8243565 -0.271152 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.666426 -0.7838205 -0.24670350000000002 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.659835 -0.7644075 -0.253644 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6475650000000001 -0.753957 -0.2279325 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6560655 -0.7480215 -0.250383 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6523800000000001 -0.748974 -0.2340555 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.655392 -0.7452015 -0.259323 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.721029 -0.8398424999999999 -0.25851 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.657942 -0.7489515 -0.238983 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6988155 -0.8080845 -0.2786655 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6948135 -0.8253165 -0.28271399999999997 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6817934999999999 -0.816786 -0.26849999999999996 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.692862 -0.8076225 -0.290817 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.7034505 -0.836385 -0.2882955 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.683454 -0.8061915 -0.2353725 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.688893 -0.8313615 -0.285441 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6434399999999999 -0.7415999999999999 -0.12711465 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.5907885 -0.6680055 -0.0358107 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6180135 -0.6708885 0.1562955 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.5644005 -0.6159899999999999 0.011412675 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.653649 -0.7696215000000001 -0.1868625 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6389009999999999 -0.7144725 -0.062094300000000005 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6242880000000001 -0.732522 -0.0883887 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.618012 -0.7305915000000001 -0.2615595 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6542954999999999 -0.8048055 -0.3346425 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6802575000000001 -0.8026785000000001 -0.340989 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6529545 -0.7835235 -0.33761399999999997 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.652911 -0.7700385 -0.32206799999999997 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6455835 -0.7473825000000001 -0.302613 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.612519 -0.71361 -0.294834 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.661995 -0.8236635 -0.08994645 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6260445 -0.7606845 -0.1134849 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6238545 -0.7627995 -0.213108 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.7038555 -0.8715225 -0.2698725 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.697944 -0.8670495 -0.24193949999999997 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6548054999999999 -0.8428005 -0.11073765 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.681303 -0.860937 -0.1856445 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.1012245 0.295371 2.60325 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.408048 -0.200709 0.7208115 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.3257565 -0.2187825 1.2021 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.10859025 0.756315 4.01421 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.01416075 0.46355250000000003 3.290625 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.14348745000000002 0.7461209999999999 4.07358 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.15793800000000002 0.803433 4.384905 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.488928 0.0668841 -0.5087145000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.4860375 0.057298049999999996 -0.451152 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.500502 0.109791 -0.5533365 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.49921799999999994 0.06579135 -0.5064945 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.4720305 0.09256215 -0.467949 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.5037824999999999 0.0929385 -0.5115525000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.49776 0.1180335 -0.49728149999999993 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.27802950000000004 2.46603 -1.69929 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.2617005 2.4312 -1.64652 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.282297 2.4746550000000003 -1.703925 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.2279205 2.44668 -1.6167150000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.224763 2.483355 -1.619415 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.2690745 2.438085 -1.65747 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.2646165 2.47593 -1.66917 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.1252413 0.8048295000000001 4.52865 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.13100145000000002 0.7720095 4.540245 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.7131240000000001 4.86738 0.2156025 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.6995775 4.99707 0.12550785 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.6677835 4.95471 0.10197615 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.6709244999999999 4.9262250000000005 0.09903165 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.711165 4.996049999999999 0.1450503 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.589911 0.5180250000000001 -0.918012 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6068205000000001 0.47714249999999997 -0.8749830000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.597234 0.5062439999999999 -0.8935095 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.61107 0.5426340000000001 -0.875358 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.581667 0.5700780000000001 -0.9359925 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.618567 0.38847000000000004 -0.7980885 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.6064229999999999 0.361992 -0.7903365 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.2535799999999995 -0.898068 -0.4681035 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='-0.364323 0.513444 -0.2977335 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.24979350000000003 -0.1718325 8.51277 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.060153000000000005 0.28257750000000004 2.2973549999999996 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.47093 -0.9771435 -0.5278590000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.5198599999999995 -0.995283 -0.5540984999999999 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.53984 -0.9993629999999999 -0.557322 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.665884999999999 -1.027968 -0.5736255 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.532805 -0.9984975 -0.5562360000000001 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='3.9077999999999995 -0.7308165000000001 -0.26788799999999996 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.29957 -0.9281429999999999 -0.4853025 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.31673 -0.9334800000000001 -0.4911705 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='0.10412775 3.181695 -1.4233755 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-sphere position='4.25421 -0.8931 -0.4713345 ' radius='0.15' color='#EF2D5E'></a-sphere>
+<a-plane position="0 -1 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane><a-sky color="#ECECEC"></a-sky></a-scene></body></html>
